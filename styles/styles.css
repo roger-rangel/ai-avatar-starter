@@ -74,15 +74,17 @@ body {
     height: min-content;
     padding: 0px;
     width: min-content;
+  
 }
 
+
 .prompt-box {
-    border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
-    border-left-width: 1px;
-    border-right-width: 1px;
+    margin-top: 1rem;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
     border-style: solid;
-    border-top-width: 1px;
+    border-image-source: linear-gradient(to left, #c31432, #240b36);
     place-content: flex-start;
     align-items: flex-start;
     background-color: rgba(255, 255, 255, 0.05);
@@ -124,7 +126,7 @@ body {
     display: flex;
     place-content: center;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-center;
     flex: 0 0 auto;
     flex-flow: row nowrap;
     gap: 12px;
@@ -136,9 +138,9 @@ body {
 }
 
 .generate-button {
-    place-content: flex-start;
-    align-items: flex-start;
-    background-color: #F32E98;
+    place-content: flex-center;
+    align-items: flex-center;
+    background-image: linear-gradient(to right,#200122 ,  #6f0000);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -146,7 +148,7 @@ body {
     gap: 10px;
     height: min-content;
     overflow: hidden;
-    padding: 16px 24px;
+    padding: 8px 24px;
     position: relative;
     text-decoration: none;
     width: min-content;
@@ -211,19 +213,22 @@ body {
 }
 
 .badge img {
-    width: 21px;
-    height: 17px;
-    image-rendering: pixelated;
+    /* width: 21px;
+    height: 17px; */
+      width: 42px;
+    height: 34px;
+    /* image-rendering: pixelated;
     flex-shrink: 0;
     fill: black;
-    color: black;
-    transform: none;
-    transform-origin: 50% 50% 0px;
+    color: black; */
+    /* transform: none;
+    transform-origin: 50% 50% 0px; */
     padding-right: 5px;
 }
 
 .badge p {
     margin: 0;
+    color: white;
 }
 
 .grow {
